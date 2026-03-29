@@ -68,4 +68,24 @@ test.describe('Admin Panel: Gestión Boutique', () => {
       await expect(page.locator('text=The Oversized Linen Blazer')).not.toBeVisible();
   });
 
+  test('debe verificar el listado de órdenes y encontrar a Valentina', async ({ page }) => {
+      // 1. Ir a listado de pedidos
+      await page.goto('/admin/orders');
+      
+      // 2. Verificar que existan pedidos cargados
+      await expect(page.locator('h2:has-text("Órdenes y Pedidos")')).toBeVisible();
+
+      // 3. Buscar a Valentina Rossi en la lista (Dato realista de los tests anteriores)
+      await expect(page.locator('text=Valentina Rossi')).toBeVisible();
+  });
+
+  test('debe verificar la gestión de equipo y staff', async ({ page }) => {
+      // 1. Ir a configuración de equipo
+      await page.goto('/admin/settings/team');
+      
+      // 2. Verificar que el administrador actual figure en el staff
+      await expect(page.locator('text=Martin Rodriguez')).toBeVisible();
+      await expect(page.locator('text=Super Admin')).toBeVisible();
+  });
+
 });

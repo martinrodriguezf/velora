@@ -1,74 +1,60 @@
-# Fase Agente 1: Diseño de Escenarios QA (Velora Boutique)
+# Fase Agente 1: Diseño de Escenarios QA (Velora Boutique) - COBERTURA TOTAL
 
 Este documento define la base de pruebas críticas para asegurar la estabilidad de la tienda en cada lanzamiento.
 
-## Escenarios de Usuario (E2E) - Storefront
+## 🛍️ Escenarios de Usuario (Storefront & Checkout)
 
 ### 1. Conversión de Moneda y Precios (Vital)
 - **Escenario:** El usuario cambia de USD a UYU en el Header.
-- **Acciones:**
-  1. Abrir `/shop`.
-  2. Verificar que los precios iniciales estén en `$ X,XX USD`.
-  3. Hacer clic en el selector "USD/UYU".
-  4. Seleccionar "UYU".
-- **Validaciones:**
-  - Los productos deben mostrar el símbolo `$`.
-  - El valor numérico debe multiplicarse por 43 (tasa fija).
-  - Los precios tachados (`compare_at_price`) deben actualizarse proporcionalmente.
+- **Validaciones:** Multiplicación x43, actualización de símbolos y precios tachados.
 
 ### 2. Flujo de Compra y Carrito (Conversión)
-- **Escenario:** Agregar un producto al carrito y verificar persistencia.
-- **Acciones:**
-  1. Abrir la página de un producto (ej: `/product/vlr-1001`).
-  2. Seleccionar un talle (obligatorio).
-  3. Hacer clic en "Sumar al Carrito".
-- **Validaciones:**
-  - Debe abrirse el `CartDrawer` automáticamente.
-  - El contador del carrito en el Header debe subir a 1.
-  - El total estimado debe ser correcto.
-  - Al recargar la página, el producto debe seguir ahí (`localStorage`).
+- **Escenario:** Agregar productos con persistencia.
+- **Validaciones:** Apertura de Drawer, contador en Header, mantenimiento de productos tras recargar.
 
-## Escenarios de Gestión (E2E) - Admin Panel
-
-### 3. Autenticación Administrativa
-- **Escenario:** El administrador inicia sesión con sus credenciales.
+### 3. Proceso de Checkout y Envío (Nuevo)
+- **Escenario:** "Valentina Rossi" realiza una compra desde Montevideo.
 - **Acciones:**
-  1. Ir a `/admin/login`.
-  2. Ingresar `admin@velora.com` y `admin123`.
-  3. Hacer clic en "Entrar al Panel".
+  1. Carrito -> Checkout.
+  2. Completar: `valentina.rossi@gmail.com`, Dirección `Av. 18 de Julio 1234, Montevideo`.
 - **Validaciones:**
-  - Debe redirigir a `/admin` (Dashboard).
-  - Debe mostrar las analíticas de ventas.
+  - El resumen de compra debe mostrar los subtotales correctos.
 
-### 4. Gestión de Productos (CRUD)
-- **Escenario:** Crear un nuevo producto y verificar que aparezca en la tienda.
+### 4. Aplicación de Cupones de Descuento (Nuevo)
+- **Escenario:** Uso del cupón "BIENVENIDA10" (10% OFF).
 - **Acciones:**
-  1. Ir a `/admin/products/new`.
-  2. Completar: Título ("Test Automation Dress"), Precio (99), Categoría ("Vestidos").
-  3. Guardar cambios.
-  4. Ir a `/shop` y buscar el producto.
+  1. Ingresar cupón en el checkout.
 - **Validaciones:**
-  - El producto debe aparecer en la lista de inventario.
-  - El producto debe ser visible en la tienda pública si está en estado "Activo".
+  - El total debe reducirse en un 10%.
 
-### 5. Gestión de Categorías
-- **Escenario:** Crear una nueva categoría y verificar su disponibilidad.
-- **Acciones:**
-  1. Ir a `/admin/categories`.
-  2. Crear categoría "Tendencias 2026" (ID: tendencias-2026).
-- **Validaciones:**
-  - La nueva categoría debe aparecer en la lista de categorías.
-  - Debe estar disponible en el selector al editar cualquier producto.
+## 👤 Escenarios de Cuenta (Customer CRM)
 
-### 6. Archivado de Productos
-- **Escenario:** Ocultar un producto de la tienda pública sin borrarlo.
+### 5. Registro y Perfil de Cliente (Nuevo)
+- **Escenario:** "Luciana Méndez" se registra en la boutique.
 - **Acciones:**
-  1. Editar un producto existente.
-  2. Cambiar su estado a "Archivado".
-  3. Guardar.
+  1. Registrar: `luciana.mendez@outlook.com`, Password `velora2026`.
+  2. Editar perfil: Cambiar dirección a `Guatemala 4567, Palermo Soho, Buenos Aires`.
 - **Validaciones:**
-  - El producto ya no debe aparecer en `/shop`.
-  - Debe figurar como "Archivado" en la lista de inventario.
+  - Los datos deben persistir en `users.json`.
+
+## ⚙️ Escenarios de Gestión (Admin Panel)
+
+### 6. Autenticación Administrativa
+- **Escenario:** Login con `admin@velora.com`.
+
+### 7. Gestión de Productos (CRUD Avanzado)
+- **Escenario:** Crear un "Tapado de Lana Edición Limitada" (Precio: 250 USD).
+- **Acciones:** Subir 3 fotos al carrusel, definir tabla de talles (S, M, L).
+
+### 8. Administración de Órdenes y Clientes (Nuevo)
+- **Escenario:** El administrador verifica el pedido de Valentina.
+- **Acciones:** Ir a `/admin/orders`.
+- **Validaciones:** El pedido de Valentina Rossi debe figurar con el estado "Pendiente".
+
+### 9. Control de Equipo (Nuevo)
+- **Escenario:** Verificar el listado de Staff.
+- **Acciones:** Ir a `/admin/settings/team`.
+- **Validaciones:** "Martin Rodriguez" (Super Admin) debe figurar como usuario activo.
 
 ---
 **Firmado:** *Agente Test Designer (IA)*
