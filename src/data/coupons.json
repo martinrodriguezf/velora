@@ -1,0 +1,12 @@
+[
+  {
+    "code": "VELORA10",
+    "discountPercent": 10,
+    "expiresAt": "2026-12-31"
+  },
+  {
+    "code": "WELCOME",
+    "discountPercent": 15,
+    "expiresAt": "2025-01-01"
+  }
+]

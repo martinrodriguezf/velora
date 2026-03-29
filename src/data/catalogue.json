@@ -1,0 +1,116 @@
+[
+  {
+    "id": "VLR-1001",
+    "title": "The Oversized Linen Blazer",
+    "description": "Blazer de lino puro con corte oversize y estructura desestructurada. Perfecto para superposición de capas y una estética effortless.",
+    "price": 120,
+    "compare_at_price": 180,
+    "condition": "new",
+    "availability": "in stock",
+    "status": "active",
+    "link": "/product/vlr-1001",
+    "image_link": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800",
+    "additional_image_links": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1548624149-f55e5ca89f66?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800"
+    ],
+    "brand": "Velora",
+    "category": "blazers",
+    "sizes": ["S", "M", "L"],
+    "color": "Beige Arena",
+    "fit": "Oversize. Te recomendamos llevar tu talle habitual para mantener el estilo holgado.",
+    "composition": "100% Lino Orgánico",
+    "model_info": "La modelo mide 1.75m y lleva la talla S.",
+    "badges": ["SALE"],
+    "promo_text": "PROMOCIÓN DISPONIBLE POR TIEMPO LIMITADO",
+    "size_guide": {
+      "headers": ["Talle", "Pecho", "Cintura", "Cadera"],
+      "rows": [
+        ["S", "88-92cm", "68-72cm", "94-98cm"],
+        ["M", "93-97cm", "73-77cm", "99-103cm"],
+        ["L", "98-102cm", "78-82cm", "104-108cm"]
+      ]
+    }
+  },
+  {
+    "id": "VLR-1002",
+    "title": "Pleated Trouser",
+    "description": "Pantalones de corte sastrero con pinzas, tiro alto y pierna recta. Un esencial de armario atemporal.",
+    "price": 85,
+    "compare_at_price": null,
+    "condition": "new",
+    "availability": "in stock",
+    "status": "active",
+    "link": "/product/vlr-1002",
+    "image_link": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=800",
+    "additional_image_links": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1509551388611-4087df6342c0?auto=format&fit=crop&q=80&w=800"
+    ],
+    "brand": "Velora",
+    "category": "pantalones",
+    "sizes": ["XS", "S", "M", "L"],
+    "color": "Gris Carbón",
+    "fit": "Relaxed Fit. Pierna recta amplia.",
+    "composition": "60% Lana, 40% Viscosa",
+    "model_info": "La modelo mide 1.78m y lleva la talla XS.",
+    "badges": [],
+    "promo_text": "",
+    "size_guide": null
+  },
+  {
+    "id": "VLR-1003",
+    "title": "Ribbed Knit Top",
+    "description": "Chaqueta / Top de punto canalé ajustado con cuello en V. Suave al contacto con la piel e ideal como capa base.",
+    "price": 45,
+    "compare_at_price": 65,
+    "condition": "new",
+    "availability": "in stock",
+    "status": "active",
+    "link": "/product/vlr-1003",
+    "image_link": "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&q=80&w=800",
+    "additional_image_links": [
+      "https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=800"
+    ],
+    "brand": "Velora",
+    "category": "tops",
+    "sizes": ["XS", "S", "M", "L"],
+    "color": "Crema",
+    "fit": "Ajustado (Fitted). Estira acompañando la silueta.",
+    "composition": "95% Algodón Pima, 5% Elastano",
+    "model_info": "La modelo mide 1.70m y lleva la talla S.",
+    "badges": ["FLASH SALE"],
+    "promo_text": "SÓLO POR HOY - 40% OFF",
+    "size_guide": null
+  },
+  {
+    "id": "VLR-1004",
+    "title": "Silk Maxi Dress",
+    "description": "Vestido largo fluido en tejido de apariencia sedosa, con caída asimétrica y espalda descubierta.",
+    "price": 140,
+    "compare_at_price": 210,
+    "condition": "new",
+    "availability": "in stock",
+    "status": "active",
+    "link": "/product/vlr-1004",
+    "image_link": "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800",
+    "additional_image_links": [
+      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=800"
+    ],
+    "brand": "Velora",
+    "category": "vestidos",
+    "sizes": ["S", "M", "L"],
+    "color": "Verde Olivo",
+    "fit": "Fluido, relajado en caderas.",
+    "composition": "100% Cupro (alternativa vegana a la seda)",
+    "model_info": "La modelo mide 1.80m y lleva la talla M.",
+    "badges": ["LIMITED"],
+    "promo_text": "",
+    "size_guide": null
+  }
+]

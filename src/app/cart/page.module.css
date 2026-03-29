@@ -1,0 +1,140 @@
+.cartPage {
+  padding: var(--spacing-lg) 1.5rem;
+  min-height: 60vh;
+}
+
+.cartPage h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.cartLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 992px) {
+  .cartLayout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .cartItem {
+    grid-template-columns: 120px 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.itemImage {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.itemHeader h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.itemDetails p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.itemActions {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.quantity span {
+  width: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.removeBtn {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.removeBtn:hover {
+  opacity: 1;
+}
+
+.cartSummary {
+  background-color: #fcfcfc;
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+}
+
+.cartSummary h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.totalRow {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.secureText {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  opacity: 0.6;
+}

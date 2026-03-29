@@ -1,0 +1,187 @@
+.productPage {
+  padding: var(--spacing-md) 1.5rem;
+  margin-bottom: var(--spacing-xl);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 992px) {
+  .productGrid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Gallery */
+.galleryWrapper {
+  width: 100%;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.detailImage {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  background-color: var(--color-border);
+}
+
+/* Sticky Info */
+.infoColumn {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .stickyInfo {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+.breadcrumbs {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Selectors */
+.selectorGroup {
+  margin-bottom: var(--spacing-md);
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.swatchGrid {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.swatchActive {
+  border: 2px solid var(--color-foreground);
+  padding: 2px;
+  background-clip: content-box;
+}
+
+.sizeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guideBtn {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.guideBtn:hover {
+  opacity: 1;
+}
+
+.sizeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.sizeBtn {
+  border: 1px solid var(--color-border);
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.sizeBtn:hover {
+  border-color: var(--color-foreground);
+}
+
+.sizeBtnActive {
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  border-color: var(--color-foreground) !important;
+}
+
+/* Buttons */
+.whatsappBtn {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid var(--color-foreground);
+  transition: background-color 0.3s ease;
+}
+
+.whatsappBtn:hover {
+  background-color: var(--color-border);
+}
+
+/* Accordions pseudo-styling */
+.accordionContainer {
+  margin-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.accordionGroup {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+}
+
+.accordionGroup h4 {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.accordionContent {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}

@@ -1,0 +1,116 @@
+.checkoutPage {
+  padding: var(--spacing-lg) 1.5rem;
+}
+
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 992px) {
+  .checkoutLayout {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+}
+
+.header h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.header nav {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.section h2 {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .row:last-child {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-md);
+}
+
+.backLink {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* Summary Column */
+.summaryColumn {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-left: 1px solid var(--color-border);
+  height: 100%;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 1.5rem 0;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.totalPrice {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

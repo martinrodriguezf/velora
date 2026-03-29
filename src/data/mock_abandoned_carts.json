@@ -1,0 +1,23 @@
+[
+  {
+    "id": "#CART-450",
+    "userEmail": "julia.mendez@example.com",
+    "value": 185.00,
+    "items": 2,
+    "abandonedAt": "Hace 2 horas"
+  },
+  {
+    "id": "#CART-455",
+    "userEmail": "fernanda.lopez@example.com",
+    "value": 420.00,
+    "items": 3,
+    "abandonedAt": "Hace 5 horas"
+  },
+  {
+    "id": "#CART-462",
+    "userEmail": "sofia.torres@gmail.com",
+    "value": 95.00,
+    "items": 1,
+    "abandonedAt": "Ayer, 19:30 hs"
+  }
+]

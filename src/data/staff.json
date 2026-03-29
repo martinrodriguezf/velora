@@ -1,0 +1,42 @@
+[
+  {
+    "id": "st-001",
+    "name": "Martin Rodriguez",
+    "email": "martin@velora.com",
+    "role": "Super Admin",
+    "status": "Active",
+    "lastLogin": "2026-03-28T10:00:00Z"
+  },
+  {
+    "id": "st-002",
+    "name": "Lucía Fernández",
+    "email": "lucia.cat@velora.com",
+    "role": "Editor de Catálogo",
+    "status": "Active",
+    "lastLogin": "2026-03-27T15:30:00Z"
+  },
+  {
+    "id": "st-003",
+    "name": "Javier Gomez",
+    "email": "javier.sales@velora.com",
+    "role": "Soporte y Ventas",
+    "status": "Active",
+    "lastLogin": "2026-03-28T09:15:00Z"
+  },
+  {
+    "id": "st-004",
+    "name": "Sofía Ricci",
+    "email": "sofia.growth@velora.com",
+    "role": "Growth / Marketing",
+    "status": "Inactive",
+    "lastLogin": "2026-03-20T11:00:00Z"
+  },
+  {
+    "id": "st-005",
+    "name": "Mateo Rossi",
+    "email": "mateo.social@velora.com",
+    "role": "Redes Sociales",
+    "status": "Active",
+    "lastLogin": "2026-03-28T12:00:00Z"
+  }
+]

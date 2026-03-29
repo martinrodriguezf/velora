@@ -1,0 +1,55 @@
+.header {
+  height: var(--nav-height);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navLeft, .navRight {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex: 1;
+}
+
+.navRight {
+  justify-content: flex-end;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.navLink, .iconBtn {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-foreground);
+}
+
+.navLink:hover, .iconBtn:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .navLeft {
+    display: none; /* Replace with hamburger menu later */
+  }
+  .navRight .iconBtn:not(:last-child) {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "marketing": {
+    "active": false,
+    "banner_text": "✨ 10% OFF en tu primera compra al registrarte",
+    "popup_title": "Desbloqueá un 10% OFF",
+    "popup_desc": "Sumate a nuestra comunidad minimalista y recibí acceso anticipado a nuevas colecciones junto con tu descuento de bienvenida."
+  },
+  "featured_products": [
+    "VLR-1001",
+    "VLR-1002",
+    "VLR-1003",
+    "VLR-1004"
+  ],
+  "hero": {
+    "title": "Líneas Limpias. Vida Consciente.",
+    "subtitle": "Esenciales atemporales para la minimalista moderna. Diseñado para simplificar tu armario y elevar tu día a día.",
+    "image": "/images/velora_hero.png"
+  },
+  "values": {
+    "title": "Qué Nos Hace Diferentes",
+    "image": "/images/velora_top.png",
+    "items": [
+      {
+        "title": "Tejidos Sostenibles",
+        "description": "Certificación GOTS, solo usamos materiales naturales."
+      },
+      {
+        "title": "Producciones Pequeñas",
+        "description": "Producido en talleres responsables para minimizar desperdicios pensando en el medio ambiente. "
+      },
+      {
+        "title": "Empaque Minimalista",
+        "description": "Empaques 100% reciclados y libres de plástico."
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "#ORD-9021",
+    "customer": "Valentina R.",
+    "date": "Hoy, 09:32 AM",
+    "status": "pending",
+    "total": 120.00
+  },
+  {
+    "id": "#ORD-9020",
+    "customer": "Luciana M.",
+    "date": "Hoy, 08:15 AM",
+    "status": "shipped",
+    "total": 265.00
+  },
+  {
+    "id": "#ORD-9019",
+    "customer": "Carolina P.",
+    "date": "Ayer, 18:40 PM",
+    "status": "delivered",
+    "total": 85.00
+  },
+  {
+    "id": "#ORD-9018",
+    "customer": "Martina F.",
+    "date": "Ayer, 14:10 PM",
+    "status": "shipped",
+    "total": 140.00
+  }
+]
