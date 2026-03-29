@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Velora Boutique: Solución E-commerce Premium 👗✨
 
-## Getting Started
+Bienvenido a **Velora**, una plataforma de comercio electrónico minimalista y de alto rendimiento diseñada para boutiques de moda de lujo. Este proyecto combina una experiencia de usuario (UX) impecable con un panel administrativo (CMS) de nivel empresarial.
 
-First, run the development server:
+## ✨ Características Principales
+- **Storefront Curado**: Diseño responsivo y minimalista optimizado para la conversión.
+- **Sistema Multidivisa (USD/UYU)**: Conversión en tiempo real con tasas configurables.
+- **CMS Administrativo**: Editor de guías de talles, galerías interactivas y gestión de inventario.
+- **Infraestructura de QA**: Cobertura total de tests End-to-End con Playwright.
+- **CI/CD Cloud**: Integración continua con GitHub Actions para deploys seguros.
 
+## 🛠️ Stack Tecnológico (Factory Standard)
+- **Frontend**: Next.js 15+ (App Router), React, CSS Modules.
+- **Estado**: React Context API (Currency, Cart).
+- **Backend/Mutaciones**: Server Actions (Node.js FS-DB).
+- **Control de Versiones**: Git & GitHub.
+- **E2E Testing**: Playwright (TypeScript) & CI GitHub Actions.
+
+## 🚀 Inicio Rápido
+
+### Instalación
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Instalar dependencias
+npm install
+
+# Instalar navegadores de Playwright para QA
+npx playwright install --with-deps
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Desarrollo
+```bash
+# Iniciar servidor local
+npm run dev
+```
+Accede a `http://localhost:3000` para la tienda y `http://localhost:3000/admin` para la gestión.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Ejecución de Tests
+```bash
+# Correr suite completa de QA
+npx playwright test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Ecosistema de Documentación Técnica
+Para una comprensión profunda del sistema, consulta nuestros manuales especializados:
 
-## Learn More
+1.  🏛️ **[Arquitectura y Diseño](file:///Users/martinrodriguez/Antigravity_projects/velora/docs/ARCHITECTURE.md)**: Estructura, flujo de datos y seguridad.
+2.  📊 **[Modelos de Datos](file:///Users/martinrodriguez/Antigravity_projects/velora/docs/DATA_MODELS.md)**: Esquemas JSON y estructura de persistencia.
+3.  🛠️ **[Manual del Admin (CMS)](file:///Users/martinrodriguez/Antigravity_projects/velora/docs/CMS_HANDBOOK.md)**: Guía de gestión de inventario y categorías.
+4.  🛡️ **[Automatización de QA](file:///Users/martinrodriguez/Antigravity_projects/velora/docs/QA_AUTOMATION.md)**: Manual de testing, Agentes y CI/CD.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+**Velora Boutique** – Desarrollado con ❤️ y estándares de calidad de *Software Factory*.
